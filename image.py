@@ -25,7 +25,7 @@ def hello():
 
 
 @lawnImageServerApp.route('/lawn/image/save', methods=['POST'])
-# @jwt_required()
+@jwt_required()
 def upload():
     try:   
         data = request.get_json()
